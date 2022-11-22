@@ -44,16 +44,16 @@ public class TextBoxTests {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Anastasiya Boyko"));
-        $(".table-responsive").shouldHave(text("boyko_anastasia@mail.ru"));
-        $(".table-responsive").shouldHave(text("Female"));
-        $(".table-responsive").shouldHave(text("8800500055"));
-        $(".table-responsive").shouldHave(text("07 August,1991"));
-        $(".table-responsive").shouldHave(text("Biology"));
-        $(".table-responsive").shouldHave(text("Reading"));
-        $(".table-responsive").shouldHave(text("Asha.jpg"));
-        $(".table-responsive").shouldHave(text("Bolshaya Pirogovskaya 36,53"));
-        $(".table-responsive").shouldHave(text("Haryana Karna"));
+        $(".table-responsive").shouldHave(text("Anastasiya Boyko"),
+                text("boyko_anastasia@mail.ru"),
+                text("Female"),
+                text("8800500055"),
+                text("07 August,1991"),
+                text("Biology"),
+                text("Reading"),
+                text("Asha.jpg"),
+                text("Bolshaya Pirogovskaya 36,53"),
+                text("Haryana Karna"));
 
 
 
