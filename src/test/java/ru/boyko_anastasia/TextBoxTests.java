@@ -27,7 +27,7 @@ public class TextBoxTests {
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
-        $("#firstName").setValue("Anastasiya");
+        $("#firstName").setValue("Anastasia");
         $("#lastName").setValue("Boyko");
         $("#userEmail").setValue("boyko_anastasia@mail.ru");
         $(byText("Female")).click();
@@ -47,7 +47,7 @@ public class TextBoxTests {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Anastasiya Boyko"),
+        $(".table-responsive").shouldHave(text("Anastasia Boyko"),
                 text("boyko_anastasia@mail.ru"),
                 text("Female"),
                 text("8800500055"),
