@@ -34,7 +34,7 @@ public class TextBoxTests {
         $("#userNumber").setValue("88005000552");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("August");
-        $(".react-datepicker__year-select").selectOption("1990");
+        $(".react-datepicker__year-select").selectOption("1991");
         $(".react-datepicker__day--007").click();
         $("#subjectsInput").setValue("Biology").pressEnter();
         $(byText("Reading")).click();
@@ -51,7 +51,7 @@ public class TextBoxTests {
                 text("boyko_anastasia@mail.ru"),
                 text("Female"),
                 text("8800500055"),
-                text("07 August,1990"),
+                text("07 August,1991"),
                 text("Biology"),
                 text("Reading"),
                 text("Asha.jpg"),
