@@ -13,6 +13,8 @@ tasks.withType(JavaCompile) {
 } /*чтобы работала кириллица*/
 
 dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testImplementation (
             "com.codeborne:selenide:6.9.0",
             "org.junit.jupiter:junit-jupiter:5.9.0"

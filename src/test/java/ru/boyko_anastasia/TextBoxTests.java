@@ -1,3 +1,5 @@
+package ru.boyko_anastasia;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -20,6 +22,7 @@ public class TextBoxTests {
     @Test
     void fillFormTest () {
         open ("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
 
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
